@@ -1,19 +1,29 @@
 .header {
   background-color: black;
-  color: white;
+  color: aliceblue;
   text-align: center;
-  padding: 10px;
+  padding: 10px 20px;
+  margin: 0;
+  display: block;
+
 
 }
 
 .navList {
-  display: flexbox;
-  justify-content: space-around;
-  list-style: none;
+  display:flex;
   padding: 0;
   margin: 0;
+  list-style: none;
+  color: aliceblue;
+  font-style: italic;
+  text-align: center;
 }
 
 .title {
   margin: 0;
+}
+
+h3 {
+  color: antiquewhite;
+
 }
