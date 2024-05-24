@@ -1,8 +1,21 @@
+<!-- Include the first header component -->
 <app-first-header></app-first-header>
 
 <div>
-  <h2>Hello {{consumerName}}, your laptop is worth around {{computer.price}} </h2>
-  <h3> it's a {{computer.name}}</h3>
+  <!-- Display a greeting message and laptop details -->
+  <h2>Hello {{consumerName}}, your laptop is worth around {{computer.price}}</h2>
+  <h3>It's a {{computer.name}}</h3>
 </div>
 
-<input type="text" placeholder="Write down your fav PC">
+<!-- Input field for user input with a dynamic placeholder -->
+<input type="text" [placeholder]="inputPlacerholder">
+
+<!-- Line breaks for spacing -->
+<br><br><br>
+
+<!-- Display the consumer's name and a button to change the name -->
+<h2>{{ consumerName }}</h2>
+<button (click)="setConsumerName()">Cambiar nombre</button>
+
+<!-- Include the person component -->
+<app-person></app-person>
